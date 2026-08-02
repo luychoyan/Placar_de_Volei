@@ -4,27 +4,50 @@ import "./App.css"
 function App() {
   const [pontoA, setPontoA] = useState(0)
   const [pontoB, setPontoB] = useState(0)
+
+  function aumentarPontoA() {
+    setPontoA(pontoA + 1)
+  }
+
+  function diminuirPontoA() {
+    if (pontoA >= 1) {
+      setPontoA(pontoA - 1)
+    }
+  }
+
+  function aumentarPontoB() {
+    setPontoB(pontoB + 1)
+  }
+
+  function diminuirPontoB() {
+    if (pontoB >= 1) {
+      setPontoB(pontoB - 1)
+    }
+  }
   
-  
+  function zerar() {
+    setPontoA(0)
+    setPontoB(0)
+  }
 
   return (
       <main>
         <p className='numero'>{pontoA}</p>
 
         <div id='caixa-hora-botoes'>
-          <h2>12:34:02</h2>
+        
 
           <div id='botoes'>
             <div id='botoesA'>
-              <button onClick={() => setPontoA(pontoA +1)}>Ponto +1</button>
-              <button onClick={() => setPontoA(pontoA -1)}>Ponto -1</button>
+              <button onClick={() => aumentarPontoA()}>Ponto + 1</button>
+              <button onClick={() => diminuirPontoA()}>Ponto - 1</button>
             </div>
 
-            <button >ZERAR</button>
+            <button id='botaoZerar' onClick={() => zerar()} >ZERAR</button>
 
             <div id='botoesB'>
-              <button onClick={() => setPontoB(pontoB +1)}>Ponto +1</button>
-              <button onClick={() => setPontoB(pontoB -1)}>Ponto -1</button>
+              <button onClick={() => aumentarPontoB()}>Ponto + 1</button>
+              <button onClick={() => diminuirPontoB()}>Ponto - 1</button>
             </div>
             
           </div>

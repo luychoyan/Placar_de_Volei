@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+SC&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ main {
 
 #caixa-hora-botoes{
     display: flex;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -27,9 +29,8 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 150px;
-    height: 130px;
-    background-color: aquamarine;
+    height: 100%;
+    
 }
 
 #botoesA{
@@ -43,24 +44,37 @@ main {
     justify-content: space-around;
 }
 
+#botaoZerar{
+    font-weight: 700;
+    background-color: rgb(116, 115, 113);
+    width: 70px;
+    margin-bottom: 30px;
+    margin-top: 180px;
+}
+
 button{
-    height: 30px;
+    height: 50px;
     width: 50px;
     border-radius: 30%;
+    text-align: center;
+    padding: 3px;
+    border: 2px rgb(41, 223, 41) solid;
+    background-color: rgb(20, 23, 41);
+color: aliceblue;
 }
 
 h2{
     color: aliceblue;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .numero{
+    font-family: "WDXL Lubrifont SC", sans-serif;
+    font-size: 350px;
+    width: 100%;
     
-    font-size: 370px;
-    width: 300px;
-    height: 100vh;
-    color: rgb(255, 136, 0);
+    color: rgb(229, 255, 0);
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff;
+    padding: 1px;
 }
