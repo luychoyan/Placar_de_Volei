@@ -54,9 +54,7 @@ function App() {
             </div>
           </div>
         </div>
-      
-        
-        
+      <a style={{color: "white", textDecoration:"none"}} href="https://www.instagram.com/luy_choyan?igsh=MTJ5ejM1czZpdWc5MA%3D%3D&utm_source=qr" target='_blank' rel="noopener noreferrer">Desenvolvido por: @Luy</a>
       </main>
   )
 }
