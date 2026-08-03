@@ -52,6 +52,7 @@ main {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #botoesA{
@@ -80,7 +81,7 @@ button{
     border-radius: 20%;
     text-align: center;
     padding: 3px;
-    border: 2px rgb(41, 223, 41) solid;
+    border: 2px rgb(41, 223, 208) solid;
     background-color: rgb(20, 23, 41);
     color: aliceblue;
     margin: 10px;
