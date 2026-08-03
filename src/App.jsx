@@ -32,11 +32,14 @@ function App() {
 
   return (
       <main>
-        <p className='numero'>{pontoA}</p>
+
+        <div id='numeros'>
+          <p className='numero'>{pontoA}</p>
+          <p id='x'>X</p>
+          <p className='numero'>{pontoB}</p>
+        </div>
 
         <div id='caixa-hora-botoes'>
-        
-
           <div id='botoes'>
             <div id='botoesA'>
               <button onClick={() => aumentarPontoA()}>Ponto + 1</button>
@@ -49,11 +52,10 @@ function App() {
               <button onClick={() => aumentarPontoB()}>Ponto + 1</button>
               <button onClick={() => diminuirPontoB()}>Ponto - 1</button>
             </div>
-            
           </div>
         </div>
       
-        <p className='numero'>{pontoB}</p>
+        
         
       </main>
   )
