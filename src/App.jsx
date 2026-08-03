@@ -54,7 +54,7 @@ function App() {
             </div>
           </div>
         </div>
-      <a style={{color: "gray", textDecoration:"none"}} href="https://www.instagram.com/luy_choyan?igsh=MTJ5ejM1czZpdWc5MA%3D%3D&utm_source=qr" target='_blank'>Desenvolvido por: @Luy</a>
+      <a id='creditos' href="https://www.instagram.com/luy_choyan?igsh=MTJ5ejM1czZpdWc5MA%3D%3D&utm_source=qr" target='_blank'>Desenvolvido por: @Luy</a>
       </main>
   )
 }
