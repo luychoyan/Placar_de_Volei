@@ -71,7 +71,7 @@ main {
     font-family: "Kanit", sans-serif;
     font-weight: 500;
     font-style: normal;
-    background-color: #00ff00cc;
+    background-color: #32CD32;
     width: 70px;
 }
 #botaoZerar:not(:hover):active{
