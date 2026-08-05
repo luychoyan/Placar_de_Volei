@@ -74,8 +74,9 @@ main {
     background-color: rgb(116, 115, 113);
     width: 70px;
 }
-#botaoZerar:hover{
+#botaoZerar:not(:hover):active{
     background-color: #00FA9A;
+    transform: scale(0.95);
 }
 
 button{
