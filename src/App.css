@@ -95,9 +95,10 @@ button{
     cursor: pointer;
     transition: all 0.2s ease;
 }
-button:hover{
+button:not(:disabled):active{
     background-color: #00FA9A;
-    transition: 0.2s;
+    transition: 0.5s;
+    transform: scale(0.95);
 }
 button:disabled{
     background-color: #374151;
