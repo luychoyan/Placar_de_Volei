@@ -2,8 +2,10 @@ import { useState } from 'react'
 import "./App.css"
 
 function App() {
+  
   const [pontoA, setPontoA] = useState(0)
   const [pontoB, setPontoB] = useState(0)
+  const [jogoIniciado, setJogoIniciado]   = useState(false)
 
   function aumentarPontoA() {
     setPontoA(pontoA + 1)
@@ -25,9 +27,16 @@ function App() {
     }
   }
   
-  function zerar() {
-    setPontoA(0)
-    setPontoB(0)
+
+  function start() {
+    if (jogoIniciado){
+      setPontoA(0)
+      setPontoB(0)
+      setJogoIniciado(false)
+    }
+    else{
+      setJogoIniciado(true)
+    }
   }
 
   return (
@@ -42,15 +51,15 @@ function App() {
         <div id='caixa-hora-botoes'>
           <div id='botoes'>
             <div id='botoesA'>
-              <button onClick={() => aumentarPontoA()}>Ponto + 1</button>
-              <button onClick={() => diminuirPontoA()}>Ponto - 1</button>
+              <button disabled={!jogoIniciado} onClick={() => aumentarPontoA()}>Ponto + 1</button>
+              <button disabled={!jogoIniciado} onClick={() => diminuirPontoA()}>Ponto - 1</button>
             </div>
 
-            <button id='botaoZerar' onClick={() => zerar()} >ZERAR</button>
+            <button id='botaoZerar' onClick={() => start()} >{jogoIniciado ? "ZERAR" : "START"}</button>
 
             <div id='botoesB'>
-              <button onClick={() => aumentarPontoB()}>Ponto + 1</button>
-              <button onClick={() => diminuirPontoB()}>Ponto - 1</button>
+              <button disabled={!jogoIniciado} onClick={() => aumentarPontoB()}>Ponto + 1</button>
+              <button disabled={!jogoIniciado} onClick={() => diminuirPontoB()}>Ponto - 1</button>
             </div>
           </div>
         </div>
